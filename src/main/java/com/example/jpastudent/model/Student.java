@@ -7,6 +7,8 @@ import jakarta.persistence.Id;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Student {
@@ -17,8 +19,6 @@ public class Student {
     private String name;
     private LocalDate bornDate;
     private LocalTime bornTime;
-
-
 
     public int getId() {
         return id;
@@ -36,19 +36,19 @@ public class Student {
         this.name = name;
     }
 
-    public LocalTime getBornTime() {
-        return bornTime;
-    }
-
-    public void setBornTime(LocalTime bornTime) {
-        this.bornTime = bornTime;
-    }
-
     public LocalDate getBornDate() {
         return bornDate;
     }
 
     public void setBornDate(LocalDate bornDate) {
         this.bornDate = bornDate;
+    }
+
+    public LocalTime getBornTime() {
+        return bornTime;
+    }
+
+    public void setBornTime(LocalTime bornTime) {
+        this.bornTime = bornTime;
     }
 }
